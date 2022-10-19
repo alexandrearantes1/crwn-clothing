@@ -1,0 +1,11 @@
+.authentication-container {
+   display: flex;
+   justify-content: space-between;
+   width: 900px;
+   margin: 30px auto;
+
+   .div {
+      width: 50%;
+      border: 1px solid red;
+   }
+}
