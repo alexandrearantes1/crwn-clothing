@@ -28,8 +28,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+// eslint-disable-next-line
 const firebaseApp = initializeApp(firebaseConfig);
-console.log(firebaseApp);
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -48,7 +48,7 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
 
    const userDocRef = doc(db, 'users', userAuth.uid);
    const userSnapshot = await getDoc(userDocRef);
-   console.log(userSnapshot.exists());
+
 
    if (!userSnapshot.exists()) {
       const { displayName, email } = userAuth;

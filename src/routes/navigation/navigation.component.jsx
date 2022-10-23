@@ -16,8 +16,6 @@ const Navigation = () => {
    const { currentUser } = useContext(UserContext);
    const { isCartOpen } = useContext(CartContext);
 
-   if (currentUser)
-      setTimeout(() => { console.log(currentUser.displayName) }, 500);
    return (
       <Fragment>
          <div className='navigation'>
